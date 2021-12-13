@@ -2,7 +2,8 @@ const logoRight = document.getElementById("logo-right");
 const logoSearch = document.getElementById("logo-search");
 const form = document.getElementById("form");
 const listNav = document.getElementById("liste-nav");
-const arrows = document.querySelectorAll(".arrow");
+const arrows = [...document.querySelectorAll(".arrow")];
+const logoFooter = document.getElementById("logo-footer");
 
 let screenWidth;
 
@@ -25,34 +26,22 @@ logoSearch.addEventListener("click", () => {
   form.classList.toggle("block");
 });
 
-/////////////////////////////////
-//////// SCROLL ON ARROW ////////
-/////////////////////////////////
-// function elementPosition(a) {
-//   var b = a.getBoundingClientRect();
-//   return {
-//     clientX: a.offsetLeft,
-//     clientY: a.offsetTop,
-//     viewportX: b.x || b.left,
-//     viewportY: b.y || b.top,
-//   };
-// }
+///////////////////////////////
+////// SCROLL ON ARROW ////////
+///////////////////////////////
 
-// arrows.forEach((arrow) => {
-//   arrow.addEventListener("click", function (e) {
-//     var positions = elementPosition(arrow);
-//     let heightScreen = e.view.innerHeight;
-//     let positionArrow = positions.clientY;
-//     let differenceHeightArrow = heightScreen - positionArrow;
-//     let inject = heightScreen - differenceHeightArrow;
-//     // console.log(inject);
-//     console.log(positionArrow);
-//     // console.log({
-//     //   "Position horizontale dans la fenêtre": positions.clientX,
-//     //   "Position verticale dans la fenêtre": positions.clientY,
-//     //   "Position horizontale dans le document": positions.viewportX,
-//     //   "Position verticale dans le document": positions.viewportY,
-//     // });
-//     // window.scroll(0, inject);
-//   });
-// });
+arrows.forEach((arrow) => {
+  arrow.addEventListener("click", function (e) {
+    let heightParent = e.view.innerHeight;
+    let indexArrow = arrows.indexOf(this) + 1;
+
+    window.scrollTo(0, heightParent * indexArrow);
+  });
+});
+
+///////////////////////////////
+////// SCROLL TO ACCUEIL //////
+///////////////////////////////
+logoFooter.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});

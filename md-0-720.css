@@ -18,6 +18,11 @@ h1 {
 #liste-nav {
   display: none;
 }
+#liste-nav a {
+  width: 300px;
+  height: 50px;
+  text-align: right;
+}
 #search {
   width: 150px;
 }
@@ -33,6 +38,9 @@ nav em {
 #section-1 article {
   flex-direction: column-reverse;
 }
+#carte{
+  width: 80%;
+}
 /***********************/
 /****** SECTION-2 ******/
 /***********************/
@@ -43,6 +51,50 @@ nav em {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.events{
+  width: 100%;
+  animation: glisses 15s infinite;
+  margin: 0 2rem;
+}
+.events img{
+  width: 350px;
+}
+.slides{
+  width: 350px;
+  overflow: hidden;
+}
+@keyframes glisses{
+  0% {
+    transform: translateX(414px);
+  }
+  12.5% {
+    transform: translateX(414px);
+  }
+  25% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-414px);
+  }
+  66% {
+    transform: translateX(-414px);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  85% {
+    transform: translateX(0);
+  }
+  95% {
+    transform: translateX(414px);
+  }
+  100% {
+    transform: translateX(414px);
+  }
 }
 
 /***********************/
