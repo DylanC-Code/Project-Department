@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="md-721-1150.css"
+      media="screen and (min-width:721px) and (max-width:1150px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./md-0-720.css"
+      media="screen and (max-width:720px)"
+    />
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:ital,wght@0,700;1,300;1,400;1,500;1,600&family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://use.fontawesome.com/f00a6ee83d.js"></script>
+    <script src="./script.js" defer></script>
+
+    <title>Marchés & Foires</title>
+  </head>
+  <body>
+    <header>
+      <div class="back-black">
+        <nav>
+          <figure>
+            <img src="./img/logo.png" alt="Logo-nav" />
+            <figcaption>
+              <pre id="slogan">Votre département
+              <em>Collecter le Moment !</em></pre>
+            </figcaption>
+          </figure>
+
+          <ul id="liste-nav">
+            <li><a href="./acceuil.html">Accueil</a></li>
+            <li><a href="./actus.html">Actualités</a></li>
+            <li><a href="./decouvir.html">A découvrir</a></li>
+          </ul>
+
+          <picture id="logo-right">
+            <source media="(max-width: 1150px)" srcset="./img/burger.png" />
+            <img src="" alt="" />
+          </picture>
+        </nav>
+
+        <h1>Marchés & Foires</h1>
+        <picture id="logo-search">
+          <img src="./img/search.png" alt="search" />
+        </picture>
+
+        <form action="" id="form">
+          <input type="search" id="search" />
+          <input type="button" value="Rechercher" id="send" />
+        </form>
+      </div>
+      <img src="./img/arrow.png" alt="" class="arrow" />
+    </header>
+
+    <main>
+      <section id="section-1">
+        <h2>Marchés</h2>
+        <article>
+          <picture class="bigCard">
+            <source
+              media="(max-width: 644px)"
+              srcset="./img/market1-litle.jpg"
+            />
+            <img
+              src="./img/market1.jpg"
+              alt="marché 1"
+              class="border-radius box-shadow-right"
+            />
+          </picture>
+          <div class="container-text">
+            <h3>Marchés de la Plane</h3>
+            <p class="paragraph-style1">
+              4 Impasse des Ribanbelle<br />74960 Cran-Gevrier<br />Du lundi au
+              Samedi de 6h à 11h30
+            </p>
+            <a href="#" class="ancre-btn">En savoir plus</a>
+          </div>
+        </article>
+
+        <article>
+          <div class="container-text">
+            <h3>Marchés des Orangettes</h3>
+            <p class="paragraph-style1">
+              12 rue des Fauconniers<br />74357 Mourmellon<br />
+              Du Mercredi au Dimanche de 8h à 11h30
+            </p>
+            <a href="#" class="ancre-btn">En savoir plus</a>
+          </div>
+          <picture class="bigCard">
+            <source
+              media="(max-width: 644px)"
+              srcset="./img/market2-litle.jpg"
+            />
+            <source
+              media="(min-width:645px) and (max-width: 1270px)"
+              srcset="./img/market2-medium.jpg"
+            />
+            <img
+              src="./img/market2.jpg"
+              alt="marché 2"
+              class="border-radius box-shadow-left"
+            />
+          </picture>
+        </article>
+      </section>
+
+      <section id="section-2">
+        <h2>Foires</h2>
+        <article>
+          <picture class="bigCard">
+            <source
+              media="(max-width: 644px)"
+              srcset="./img/foire1-litle.jpg"
+            />
+            <img
+              src="./img/foire1.jpg"
+              alt="foire"
+              class="border-radius box-shadow-right"
+            />
+          </picture>
+
+          <div class="container-text">
+            <h3>Foire d'annecy</h3>
+            <p class="paragraph-style1">
+              25 boulevard de Jupiter<br />74000 Annecy<br />Tous les soirs de
+              18h à 23h
+            </p>
+            <a href="#" class="ancre-btn">En savoir plus</a>
+          </div>
+        </article>
+
+        <article>
+          <div class="container-text">
+            <h3>Foire de Roquebrune</h3>
+            <p class="paragraph-style1">
+              1 place des Ecureuils<br />74360 Aillon-le-Jeune<br />Du 15 Avril
+              au 31 Juin
+            </p>
+            <a href="#" class="ancre-btn">En savoir plus</a>
+          </div>
+          <picture class="bigCard">
+            <source
+              media="(max-width: 644px)"
+              srcset="./img/foire2-litle.jpg"
+            />
+            <source
+              media="(min-width:645px) and (max-width: 1150px)"
+              srcset="./img/foire2-medium.jpg"
+            />
+            <img
+              src="./img/foire2.jpg"
+              alt="foire2"
+              class="border-radius box-shadow-left"
+            />
+          </picture>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div id="container-article">
+        <article>
+          <img src="./img/logo.png" alt="Logo" />
+          <p>
+            1 Place de la Manufacture<br />
+            74000 Annecy
+          </p>
+          <a href="#" class="ancre-btn">Contact & Horaires</a>
+        </article>
+
+        <article>
+          <h5>Inscription</h5>
+          <h4>Newsletter</h4>
+          <p>
+            Recevez les actus et les bons plans de<br />
+            Haute-Savoie
+          </p>
+          <a href="#" class="ancre-btn">S'inscrire</a>
+        </article>
+
+        <article>
+          <a href="#" class="ancre-plus"
+            ><i class="fa fa-book" aria-hidden="true"></i>BROCHURES</a
+          >
+          <br />
+          <a href="#" class="ancre-plus"
+            ><i class="fa fa-lock" aria-hidden="true"></i>ESPACE PRO</a
+          >
+        </article>
+      </div>
+      <h6>
+        Ce site est protégé par reCAPTCHA. Les règles de confidentialités et les
+        conditions d'utilisation de Google s'appliquent. Made with ♥ by
+        DylanC-Code
+      </h6>
+    </footer>
+  </body>
+</html>

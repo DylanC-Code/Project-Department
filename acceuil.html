@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Haute-savoie" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="md-721-1150.css"
+      media="screen and (min-width:721px) and (max-width:1150px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./md-0-720.css"
+      media="screen and (max-width:720px)"
+    />
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:ital,wght@0,700;1,300;1,400;1,500;1,600&family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://use.fontawesome.com/f00a6ee83d.js"></script>
+    <script src="./script.js" defer></script>
+
+    <title>Departement Haute-Savoie</title>
+  </head>
+  <body>
+    <header>
+      <div class="back-black">
+        <nav>
+          <figure>
+            <img src="./img/logo.png" alt="Logo-nav" />
+            <figcaption>
+              <pre id="slogan">Votre département
+              <em>Collecter le Moment !</em></pre>
+            </figcaption>
+          </figure>
+
+          <ul id="liste-nav">
+            <li><a href="./actus.html">Actualités</a></li>
+            <li><a href="./decouvir.html">A découvrir</a></li>
+            <li><a href="./marches&foires.html">Marchés & Foires</a></li>
+          </ul>
+
+          <picture id="logo-right">
+            <source media="(max-width: 1150px)" srcset="./img/burger.png" />
+            <img src="" alt="" />
+          </picture>
+        </nav>
+
+        <h1>Haute-Savoie</h1>
+        <picture id="logo-search">
+          <img src="./img/search.png" alt="search" />
+        </picture>
+
+        <form action="" id="form">
+          <input type="search" id="search" />
+          <input type="button" value="Rechercher" id="send" />
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section id="section-1">
+        <h2>Les lac, les montagnes et la cuisine locale…</h2>
+        <h3>
+          Une destination aux multiples facettes pour une expérience inoubliable
+          ! Venez vivre la vôtre et changez d'air pour découvrir ce territoire
+          gorgé de richesses.
+        </h3>
+
+        <article>
+          <p class="paragraph-style0">
+            Situé au coeur de la région <strong>Rhone-Alpes</strong>, la
+            <strong>Haute-Savoie</strong> et son histoire sera vous
+            accueillir!<br />
+            <br />
+            Réputé depuis des années pour son
+            <strong>climat hivernal</strong> propice aux sports d’hiver et en
+            <strong>été</strong> pour son patrimoine rempli d'histoire au coeur
+            des <strong>Alpes</strong>.<br />
+            <br />
+            Celui-ci sera vous proposé de nombreuses
+            <strong>activités</strong> en accord avec la
+            <strong>saison</strong>.
+          </p>
+
+          <img src="./img/carte.png" alt="carte france" />
+        </article>
+      </section>
+
+      <section id="section-2">
+        <h2>Venez découvrir nos richesses</h2>
+
+        <div id="container-figure">
+          <figure class="card">
+            <img src="./img/lac.jpg" alt="lac" />
+            <figcaption>Nos lacs</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="./img/massif.jpg" alt="Massif" />
+            <figcaption>Nos Massifs</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="./img/foire.jpg" alt="Foire" />
+            <figcaption>Nos Foires & Marchés</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="./img/vieille-ville.jpg" alt="Vieille ville" />
+            <figcaption>Nos Patrimoines</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="container-article">
+        <article>
+          <img src="./img/logo.png" alt="Logo" />
+          <p>
+            1 Place de la Manufacture<br />
+            74000 Annecy
+          </p>
+          <a href="#" class="ancre-btn">Contact & Horaires</a>
+        </article>
+
+        <article>
+          <h5>Inscription</h5>
+          <h4>Newsletter</h4>
+          <p>
+            Recevez les actus et les bons plans de<br />
+            Haute-Savoie
+          </p>
+          <a href="#" class="ancre-btn">S'inscrire</a>
+        </article>
+
+        <article>
+          <a href="#" class="ancre-plus"
+            ><i class="fa fa-book" aria-hidden="true"></i>BROCHURES</a
+          >
+          <br />
+          <a href="#" class="ancre-plus"
+            ><i class="fa fa-lock" aria-hidden="true"></i>ESPACE PRO</a
+          >
+        </article>
+      </div>
+      <h6>
+        Ce site est protégé par reCAPTCHA. Les règles de confidentialités et les
+        conditions d'utilisation de Google s'appliquent. Made with ♥ by
+        DylanC-Code
+      </h6>
+    </footer>
+  </body>
+</html>

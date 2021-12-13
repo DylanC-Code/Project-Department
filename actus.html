@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="md-721-1150.css"
+      media="screen and (min-width:721px) and (max-width:1150px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./md-0-720.css"
+      media="screen and (max-width:720px)"
+    />
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:ital,wght@0,700;1,300;1,400;1,500;1,600&family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://use.fontawesome.com/f00a6ee83d.js"></script>
+    <script src="./script.js" defer></script>
+
+    <title>Departement Haute-Savoie</title>
+  </head>
+  <body>
+    <header>
+      <div class="back-black">
+        <nav>
+          <figure>
+            <img src="./img/logo.png" alt="Logo-nav" />
+            <figcaption>
+              <pre id="slogan">Votre département
+              <em>Collecter le Moment !</em></pre>
+            </figcaption>
+          </figure>
+
+          <ul id="liste-nav">
+            <li><a href="./acceuil.html">Accueil</a></li>
+            <li><a href="./decouvir.html">A découvrir</a></li>
+            <li><a href="./marches&foires.html">Marchés & Foires</a></li>
+          </ul>
+
+          <picture id="logo-right">
+            <source media="(max-width: 1150px)" srcset="./img/burger.png" />
+            <img src="" alt="" />
+          </picture>
+        </nav>
+
+        <h1>Actualités</h1>
+        <picture id="logo-search">
+          <img src="./img/search.png" alt="search" />
+        </picture>
+
+        <form action="" id="form">
+          <input type="search" id="search" />
+          <input type="button" value="Rechercher" id="send" />
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section id="section-1">
+        <h2>Actualités de la région</h2>
+        <article id="meteo">
+          <a
+            target="_blank"
+            href="https://hotelmix.fr/weather/annecy-18614,w2004,18145"
+            ><img
+              src="https://w.bookcdn.com/weather/picture/2_18614,w2004,18145_1_3_009fa0_350_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=581&anc_id=2108"
+              alt="booked.net"
+          /></a>
+
+          <h3>Météo de votre région</h3>
+          <div style="width: 35%">
+            <iframe
+              width="100%"
+              height="266"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=266&amp;hl=fr&amp;q=annecy+(Nom%20de%20votre%20%C3%A9tablissement)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></iframe>
+          </div>
+        </article>
+
+        <article>
+          <div class="events">
+            <h4>Aménagements</h4>
+            <a href="#"><img src="./img/travaux.jpg" alt="travaux" /></a>
+          </div>
+          <div class="events">
+            <h4>événements sportif</h4>
+            <a href="#"><img src="./img/marathon.jpg" alt="marathon" /></a>
+          </div>
+          <div class="events">
+            <h4>Concerts & spectacles</h4>
+            <a href="#"><img src="./img/spectacle.jpg" alt="spectacle" /></a>
+          </div>
+        </article>
+      </section>
+
+      <section id="section-2">
+        <h2>Les insolites du mois</h2>
+        <article>
+          <a href="#">
+            <picture>
+              <source media="(max-width: 850px)" srcset="./img/insolite-litle.jpg">
+              <img src="./img/insolite.jpg" alt="rescue">
+            </picture>
+          </a>
+          <div class="container-text">
+            <h3>Sauvetage in-extremis en montagne</h3>
+            <p class="paragraph-style1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+              deleniti.
+            </p>
+            <a href="#" class="ancre-btn">En savoir plus</a>
+          </div>
+        </article>
+
+        <article>
+          <div class="container-text">
+            <h3>Ventes de sapins de noël sur annecy</h4>
+            <p class="paragraph-style1">Du 1er au 23 décembre</p>
+            <a href="#" class="ancre-btn">En savoir plus</a>
+          </div>
+          <picture>
+            <source media="(max-width: 850px)" srcset="./img/sapins-litle.jpg">
+            <img src="./img/sapins.jpg" alt="sapins"/>
+          </picture>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div id="container-article">
+        <article>
+          <img src="./img/logo.png" alt="Logo" />
+          <p>
+            1 Place de la Manufacture<br />
+            74000 Annecy
+          </p>
+          <a href="#" class="ancre-btn">Contact & Horaires</a>
+        </article>
+
+        <article>
+          <h5>Inscription</h5>
+          <h4>Newsletter</h4>
+          <p>
+            Recevez les actus et les bons plans de<br />
+            Haute-Savoie
+          </p>
+          <a href="#" class="ancre-btn">S'inscrire</a>
+        </article>
+
+        <article>
+          <a href="#" class="ancre-plus"
+            ><i class="fa fa-book" aria-hidden="true"></i>BROCHURES</a
+          >
+          <br />
+          <a href="#" class="ancre-plus"
+            ><i class="fa fa-lock" aria-hidden="true"></i>ESPACE PRO</a
+          >
+        </article>
+      </div>
+      <h6>
+        Ce site est protégé par reCAPTCHA. Les règles de confidentialités et les
+        conditions d'utilisation de Google s'appliquent. Made with ♥ by
+        DylanC-Code
+      </h6>
+    </footer>
+  </body>
+</html>
